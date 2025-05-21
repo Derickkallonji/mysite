@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Online CV</title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+ </head>
+ <body>
+     <header>
+         <h1 id="MyCV">My Online CV</h1>
+     </header>
+
+     <main>
+        <section id="profile">
+            <img src="myPic.jpg" alt="My Picture" width="200" height="200">
+            <div id="bio">
+                <p>I am a software engineer, passionate about programming, coding, and solving problems.</p>    
+                <p>I enjoy learning new technologies and applying them to create innovative solutions.</p>  
+                <p>My goal is to continuously grow as a developer and contribute to impactful projects.</p>
+            </div>
+        </section>
+
+         <section id="contact">
+             <h4>Full Name:</h4> <p>Derick Kalonji Mbaya</p>
+             <h4>Phone Number:</h4> <p>+27 81 670 81 35</p>
+             <h4>Alternative Phone Number:</h4> <p>+27 66 371 81 64</p>
+             <h4>Email</h4> <p>drckklnj@gmail.com</p>
+             <h4>X(Tweeter)</h4> <p><a href="https://x.com/d_e_ri_c_k" target="_blank">My X Profile</a></p>
+             <h4>LinkedIn</h4> <p><a href="https://www.linkedin.com/in/derick-kalonji-72116113a" target="_blank">My LinkedIn Profile</a></p>
+             <br>
+         </section>
+
+         <section id="skills">
+             <h4>Skills</h4>
+             <ul>
+                 <li>JavaScript</li>
+                 <li>Python</li>
+                 <li>HTML & CSS</li>
+                 <li>MySQL</li>
+                 <li>SQLite</li>
+             </ul><br>
+         </section>
+
+         <section id="education">
+             <h4>Education</h4>
+             <p>Complexe Scolaire La Source - Grade 12 (2011)</p>
+             <p>Upskill - Web Development (2022 - 2024)</p>
+             <p>HyperionDev - Software Engineer (2025 - Present)</p><br>
+         </section>
+
+         <section id="experience">
+             <h4>Experience</h4>
+             <p>Freelance Developer (2025 - Present)</p>
+             <p>Worked on various projects, including web applications and software development.</p>
+             <p>Collaborated with clients to understand their requirements and deliver high-quality solutions.</p><br>
+         </section>
+
+         <section id="search">
+             <h4>Search My CV</h4>
+             <form method="GET" action="/search">
+                 <label for="search-term">Search Keywords:</label>
+                 <input type="text" id="search-term" name="q" placeholder="e.g., JavaScript, Python">
+                 <button type="submit">Search</button>
+             </form><br>
+         </section>
+
+         <h4>Contact Me</h4>
+         <form method="POST" action="/contact">
+             <label for="name">Your Name:</label><br>
+             <input type="text" id="name" name="name" required><br>
+            
+             <label for="email">Your Email:</label><br>
+             <input type="email" id="email" name="email" required><br>
+            
+             <label for="message">Message:</label><br>
+             <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+             <button type="submit">Send Message</button>
+         </form><br>
+         <p></p><a href="#MyCV">Back to top</a></p>
+         <p>© 2023 Derick Kalonji Mbaya. All rights reserved.</p>
+         <br><br>
+     </main>
+
+     
+         
+     
+ </body>
+</html>
